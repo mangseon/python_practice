@@ -1,6 +1,6 @@
 # python 
 
-- 6/9 기록
+- 6/9 
 
 1차 강의에서 잘 이해 안되었던 것. 딕셔너리 개인공부 필요
 
@@ -23,14 +23,14 @@ key = x.split()[0]                                 # (경기 031)을 공란 기�
 value = x.split()[1]                              # (경기 031)을 공란 기준으로 나누고 031을 밸류값으로 설정
 phone_dict[key] = value                    # 딕셔너리 상 키값과 밸류값 매칭
 
-- 6/13일 기록
+- 6/13일 
 
 파이썬 2차강의 재시청 ~시각화전까지
 파이썬 2차 과제 풀이 - 모르는 부분이 꽤 있어서 보완 필요
 
 구글링 통해 fillna()가 결측치 대체하는것알아냄
 
-- 6/14일 기록
+- 6/14일
 
 df[""] 는 시리즈 출력
 df[[""]]는 시리즈 결과를 데이터 출력
@@ -41,3 +41,13 @@ df[(df["embarked"] == "C")  & (df["pclass"] == 3) ]
 각 조건문은 ()로 감싸줘여한다.
 
 boolean은 ""로 감싸지 말아라
+
+- 6/15일
+df.isnull() = df.isna()
+frac = df의 전체 갯수 중 숫자만큼 갯수 가져온다.
+.mead() * 100하면 비율이다.
+데이터 불러온다음 확인할 정보들 = shape, head, tail, info, dtypes, describe, describe(include = "object")
+.agg()는 보고싶은 정보 결합할 때 쓰인다.
+regplot과 lmplot의 차이점 = lmplot은 reg플롯과 변수들을 결합하여 보여준다.
+estimator in barplot = 원하는 집계
+.unstack() = 재구조화
