@@ -51,3 +51,7 @@ frac = df의 전체 갯수 중 숫자만큼 갯수 가져온다.
 regplot과 lmplot의 차이점 = lmplot은 reg플롯과 변수들을 결합하여 보여준다.
 estimator in barplot = 원하는 집계
 .unstack() = 재구조화
+
+-6/30
+drpona(axis = n) 하면 결측치가 하나라도 있는 것 삭제
+dropna(axis = n, how ="all")은 모든 값이 결측치인것 삭제
