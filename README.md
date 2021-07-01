@@ -58,3 +58,7 @@ dropna(axis = n, how ="all")은 모든 값이 결측치인것 삭제
 
 -7/1
 .append -> 리스트에 항목 추가
+dropna()
+df.dropna(thresh =2)는 nan값이 2개인 행 삭제
+df.dropna(subset=['name', 'toy'])는 네임이랑 토이에 nan값 있는 행 삭제
+![image](https://user-images.githubusercontent.com/85600255/124081429-819db000-da86-11eb-8990-21cea7832282.png)
