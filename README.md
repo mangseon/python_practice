@@ -55,3 +55,6 @@ estimator in barplot = 원하는 집계
 -6/30
 drpona(axis = n) 하면 결측치가 하나라도 있는 것 삭제
 dropna(axis = n, how ="all")은 모든 값이 결측치인것 삭제
+
+-7/1
+.append -> 리스트에 항목 추가
