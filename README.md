@@ -64,3 +64,8 @@ df.dropna(thresh =2)는 nan값이 2개인 행 삭제(거른다)
 df.dropna(subset=['name', 'toy'])는 네임이랑 토이에 nan값 있는 행 삭제
 
 ![image](https://user-images.githubusercontent.com/85600255/124081429-819db000-da86-11eb-8990-21cea7832282.png)
+
+df.인구수 == df.['인구수']
+df.loc[df.인구수 < 1000] == 인구수가 1000미만인 값을 보여준다.
+
+멀티인덱스 공부
