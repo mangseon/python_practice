@@ -1,1 +1,42 @@
+# pandas
+1. s = pd.Series([0, 0.25, 0.5, 0.75, 1.0],
+                index = ['a', 'b', 'c', 'd', 'e'])
+                
+2. pd.DataFrame(np.random.rand(5,5),
+             columns = ['a','b','c','d','e'],
+             index = [1,2,3,4,5])
+             
+3. idx[::2] #투스텝으로 출력 0번 값부터 퐁당퐁당 출력
 
+4. print(idx.ndim) # 몇차원인지
+
+
+5. print(idx1.difference(idx2)) #차집합
+   print(idx1-idx2) # 개별연산
+   print(idx1.intersection(idx2)) # 교집합
+   print(idx1.union(idx2)) #중복값 제외한 합집합
+   print(idx1.delete(0)) #첫번째 값 제거
+   print(idx1.drop(1)) # 1제거
+   print(idx1 ^ idx2) # 여집합
+   
+6. s.items() # 묶여서 나타낸다
+   그래서 list(s.items()) list로 감싸서 나타낸다
+   
+7. s.iloc[1] # 정수값으로 접근 0부터 시작 그래서 1넣으면 2번째 출력
+
+8. s.reindex(range(10), method = 'bfill') # nan을 전 값으로 채워준다
+
+9. df.인구수 == df.['인구수']
+   df.loc[df.인구수 < 1000] == 인구수가 1000미만인 값을 보여준다.
+   
+10. .unstack() #다중인덱스 구조의 시리즈를 데이터프레임 형태로 변환
+
+11. series.rank(method = 'first') = 동일한 수가 있을 경우 먼저나온 수의 순위를 더 높게 매긴다.
+
+12. series.rank(method = 'max') = 같은값을 갖는 그룹을 한단계 높은 순위로 매긴다.
+
+13. cum*** = 컬럼별로 누적해서 계산한다.
+
+14. pivot table에서 margins = True = 부분합 혹은 총계
+
+15. pivot table에서 aggfunc = *** = 집계함수 지정
